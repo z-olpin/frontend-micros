@@ -1,0 +1,10 @@
+:root, body {
+  cursor: none;
+}
+.cursor {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 15px;
+}
