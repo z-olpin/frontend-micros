@@ -1,0 +1,145 @@
+/********************** RESETS *********************/
+html {
+  line-height: 1.15;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h2 {
+  font-size: 2em;
+  margin: 0.67em;
+}
+a {
+  background-color: transparent;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+textarea {
+  overflow: auto;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[hidden] {
+  display: none;
+}
+
+/*************************************************/
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/******** sections / panes of navigation **********/
+section {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+section > * {
+  margin: 1rem 1rem 0 1rem;
+}
+
+section:first-child {
+  background-color: #588b8b;
+  z-index: 1;
+}
+
+section:last-child {
+  background-color: #c8553d;
+  color: rgb(240, 240, 240);
+  top: 8rem;
+  z-index: 3;
+}
+/* rough top border */
+section:last-child:after {
+  position: absolute;
+  content: " ";
+  background-image: url("../img/orange.svg");
+  background-size: cover;
+  height: 16px;
+  top: -14px;
+  display: block;
+  width: 100vw;
+}
+
+section:nth-child(even) {
+  background-color: rgb(170, 145, 112);
+  top: 4rem;
+  z-index: 2;
+}
+
+section:nth-child(even):after {
+  position: absolute;
+  content: " ";
+  background-image: url("../img/brown.svg");
+  background-size: cover;
+  height: 16px;
+  top: -14px;
+  width: 100vw;
+  display: block;
+}
+/*********************************************/
+
+h2 {
+  font-size: calc(1.5rem + calc(0.01 * 100vw));
+  max-height: 5rem;
+  color: rgb(245, 245, 245);
+}
+
+h2:hover {
+  cursor: pointer;
+}
