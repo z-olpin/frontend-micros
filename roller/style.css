@@ -1,0 +1,76 @@
+:root, html {
+  background-color: #282828;
+  color: #ebeae9;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#root {
+  height: 100vh;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  top: calc(50vh - 50px);
+  z-index: 0;
+  color: #a08486;
+  font-size: 5rem;
+}
+
+h1:hover {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.time-is-a-flat-circle {
+  position: absolute;
+  bottom: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  background-color: #ebeae9;
+  border-radius: 100px;
+  animation: roller 7000ms linear infinite;
+}
+
+@keyframes roller {
+  from { transform: rotate(0deg) translateX(35vh); }
+  to { transform: rotate(360deg) translateX(35vh); }
+}
+
+@media (max-width: 500px) {
+
+  h1 { font-size: 14vw; }
+  
+  .time-is-a-flat-circle {
+    bottom: calc(50vh);
+    left: calc(50% - 35px);
+    height: 70px;
+    width: 70px;
+    border-radius: 80px;
+    animation: roller-mobile 7000ms linear infinite;
+  }
+
+  @keyframes roller-mobile {
+    from { transform: rotate(0deg) translateX(30vw); }
+    to { transform: rotate(360deg) translateX(30vw); }
+  }
+}
