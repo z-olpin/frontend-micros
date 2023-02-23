@@ -1,5 +1,5 @@
-<h1>frontend-micros</h1>
-Little experiments.
+# Frontend micros
+Just some little experiments.
 
 <h2>accordian</h2>
 <img src="https://raw.githubusercontent.com/vxxce/frontend-micros/master/accordian-nav/accordian.gif" alt="accordian nav gif" />
